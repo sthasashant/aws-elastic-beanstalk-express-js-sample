@@ -6,6 +6,7 @@ pipeline {
                 sh 'node --version'
                 sh 'npm --version'
                 sh 'npm install --save'
+                sh 'npm install express@4.20.0'
             }
         }
         stage('Snyk Scan') {
