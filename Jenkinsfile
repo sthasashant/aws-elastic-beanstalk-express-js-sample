@@ -13,7 +13,7 @@ pipeline {
                 echo 'Scanning...'
                 sh '''
                 npm install snyk -g
-                snyk auth ${SNYK_TOKEN}  
+                snyk auth 743916bb-4361-4f05-b84d-ceeeee17d530
                 snyk test --severity-threshold=high
                 '''
             }
